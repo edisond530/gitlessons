@@ -1,78 +1,7 @@
-﻿{
+{
   "OKViewItems": {
-    "key": "2.15.0r1(09.27)Pv05",
+    "Key": "2.16.2(10.30)Pv72",
     "Cards": {
-      "double_purchase_offer": {
-        "FactoryType": "OKStandardMenuCardFactory",
-        "Elements": {
-          "2": {
-            "Size": 2,
-            "Layers": [
-              {
-                "Bundle": "_menus/_purchase/purchasecards",
-                "Image": "PurchaseCardBG",
-                "Transform": {
-                  "position": "-1,-2,-1",
-                  "scale": "2,2,1"
-                }
-              },
-              {
-                "Bundle": "_menus/_purchase/purchasecards",
-                "Image": "PurchaseCardFG",
-                "Transform": {
-                  "position": "-1,-2,-2",
-                  "scale": "2,2,1"
-                }
-              },
-              {
-                "Bundle": "_menus/_purchase/purchasecards",
-                "Object": "TextObject_Amount",
-                "Transform": {
-                  "position": "-1,-102,-3",
-                  "scale": "1.75,1.75,1",
-                  "rotation": "0,0,-7.5"
-                },
-                "OverrideKey": "TotalValue"
-              },
-              {
-                "Bundle": "_menus/_purchase/purchasecards",
-                "Object": "TextObject_Percent",
-                "Transform": {
-                  "position": "-1,251,-4",
-                  "scale": "1.25,1.25,1"
-                },
-                "OverrideKey": "BonusPercent"
-              },
-              {
-                "Bundle": "_menus/_purchase/purchasecards",
-                "Object": "TextObject_Price",
-                "Transform": {
-                  "position": "-1,-390,-31",
-                  "scale": "0.6,0.6,1"
-                },
-                "OverrideKey": "Price"
-              }
-            ],
-            "Bundle": "main",
-            "Prefab": "Prefabs/Menus/OKMenu/Cards/2X1PromoCard"
-          }
-        },
-        "OnClickAction": {
-          "type": "Purchase",
-          "customOfferID": "customoffer1"
-        },
-        "Decorators": [
-          {
-            "Key": "Purchase",
-            "Metadata": {
-              "customOfferID": "customoffer1",
-              "TotalChipAmount_short": "TotalValue",
-              "ChipBonus": "BonusPercent",
-              "PriceAmount": "Price"
-            }
-          }
-        ]
-      },
       "double_dynamic_offer": {
         "FactoryType": "OKStandardMenuCardFactory",
         "Elements": {
@@ -300,7 +229,6 @@
       "FireUp": {
         "ID": "FireUp",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 1,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -381,7 +309,6 @@
       "FireUpLow": {
         "ID": "FireUpLow",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 1,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -472,117 +399,9 @@
           }
         ]
       },
-      "lobby_classiclobby": {
-        "FactoryType": "OKStandardMenuCardFactory",
-        "Elements": {
-          "2": {
-            "Size": 2,
-            "Layers": [
-              {
-                "Bundle": "_menus/_sublobby/_double/boost",
-                "Image": "boost_bg",
-                "Transform": {
-                  "position": "0,-7,-1",
-                  "scale": "2,2,2"
-                }
-              },
-              {
-                "Bundle": "_menus/_sublobby/_double/boost",
-                "Image": "boost_icon",
-                "Transform": {
-                  "position": "0,0,-2"
-                },
-                "Parallax": 0.5
-              }
-            ],
-            "Bundle": "main",
-            "Prefab": "Prefabs/Menus/OKMenu/Cards/2X1RewardCard"
-          }
-        },
-        "OnClickAction": {
-          "type": "View",
-          "sortCategory": "Classic",
-          "viewName": "GamesMenu"
-        }
-      },
-      "lobby_boostlobby": {
-        "FactoryType": "OKStandardMenuCardFactory",
-        "Elements": {
-          "2": {
-            "Size": 2,
-            "Layers": [
-              {
-                "Bundle": "_menus/_sublobby/_double/boost",
-                "Image": "boost_bg",
-                "Transform": {
-                  "position": "0,-7,-1",
-                  "scale": "2,2,2"
-                }
-              },
-              {
-                "Bundle": "_menus/_sublobby/_double/boost",
-                "Image": "boost_icon",
-                "Transform": {
-                  "position": "0,0,-2"
-                },
-                "Parallax": 0.5
-              }
-            ],
-            "Bundle": "main",
-            "Prefab": "Prefabs/Menus/OKMenu/Cards/2X1RewardCard"
-          }
-        },
-        "OnClickAction": {
-          "type": "View",
-          "viewName": "BoostLobby"
-        }
-      },
-      "boosthelp": {
-        "FactoryType": "OKStandardMenuCardFactory",
-        "Elements": {
-          "2": {
-            "Size": 2,
-            "Layers": [
-              {
-                "Bundle": "_menus/_sublobby/_double/boosthelp",
-                "Image": "boosthelp_bg",
-                "Transform": {
-                  "position": "0,-7,-1",
-                  "scale": "2,2,2"
-                }
-              },
-              {
-                "Bundle": "_menus/_sublobby/_double/boosthelp",
-                "Image": "boosthelp_icon",
-                "Transform": {
-                  "position": "0,0,-2"
-                },
-                "Parallax": 0.5
-              },
-              {
-                "Bundle": "_menus/_sublobby/_double/boosthelp",
-                "Image": "boosthelp_title",
-                "Transform": {
-                  "position": "0,0,-3"
-                },
-                "Parallax": 0.5
-              }
-            ],
-            "Bundle": "main",
-            "Prefab": "Prefabs/Menus/OKMenu/Cards/2X1RewardCard"
-          }
-        },
-        "OnClickAction": {
-          "type": "Popup",
-          "bundleName": "_menus/_dialogs/boosthelp",
-          "prefabPath": "Prefab",
-          "popupName": "Blocker"
-        }
-      },
       "elsenor": {
         "ID": "elsenor",
         "MetaData": {
-          "EnableKey": "elsenor",
           "UnlockLevel": 1,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -672,100 +491,9 @@
           }
         ]
       },
-      "earlyaccess_promo": {
-        "ID": "earlyaccess_promo",
-        "MetaData": {
-          "HideIfCardShowing": "lotuslandmulti",
-          "UnlockLevel": 0
-        },
-        "FactoryType": "OKStandardMenuCardFactory",
-        "Elements": {
-          "2": {
-            "Size": 2,
-            "Layers": [
-              {
-                "Bundle": "_menus/_games/_double/lotuslandmulti",
-                "Image": "LotusLandMulti_GameCard_Background",
-                "Transform": {
-                  "position": "0,-26,-1"
-                }
-              },
-              {
-                "Bundle": "_menus/_games/_double/lotuslandmulti",
-                "Image": "LotusLandMulti_GameCard_Logo_Game",
-                "Transform": {
-                  "position": "0,166,-3"
-                },
-                "Parallax": 0.5
-              },
-              {
-                "Bundle": "_menus/_games/_double/elsenorcomingsoon",
-                "Image": "ElSenor_ComingSoonCard_Label",
-                "Transform": {
-                  "position": "0,295,-3"
-                },
-                "Parallax": 1
-              }
-            ],
-            "Bundle": "main",
-            "Prefab": "Prefabs/Menus/OKMenu/Cards/2x1GenericMenuCard"
-          }
-        },
-        "OnClickAction": {
-          "type": "Event",
-          "Event": "EarlyAccess_Card_Clicked"
-        },
-        "Decorators": []
-      },
-      "elsenorcomingsoon": {
-        "ID": "elsenorcomingsoon",
-        "MetaData": {
-          "EnableKey": "elsenorcomingsoon",
-          "UnlockLevel": 1,
-          "GambleUnlockLevel": -1,
-          "Availablility": "Available",
-          "CDNImageURL": "AA_sharedassets_placeholder.png"
-        },
-        "FactoryType": "OKStandardMenuCardFactory",
-        "Elements": {
-          "2": {
-            "Size": 2,
-            "Layers": [
-              {
-                "Bundle": "_menus/_games/_double/elsenorcomingsoon",
-                "Image": "ElSenor_ComingSoonCard_Background",
-                "Transform": {
-                  "position": "0,-7,-1"
-                }
-              },
-              {
-                "Bundle": "_menus/_games/_double/elsenorcomingsoon",
-                "Image": "ElSenor_ComingSoonCard_Logo_Game",
-                "Transform": {
-                  "position": "0,-8,-2"
-                },
-                "Parallax": 0.5
-              },
-              {
-                "Bundle": "_menus/_games/_double/elsenorcomingsoon",
-                "Image": "ElSenor_ComingSoonCard_Label",
-                "Transform": {
-                  "position": "0,295,-3"
-                },
-                "Parallax": 1
-              }
-            ],
-            "Bundle": "main",
-            "Prefab": "Prefabs/Menus/OKMenu/Cards/2x1GenericMenuCard"
-          }
-        },
-        "OnClickAction": {},
-        "Decorators": []
-      },
       "betrocknightsboost": {
         "ID": "betrocknightsboost",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 35,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -853,7 +581,6 @@
       "christmaspiratesboost": {
         "ID": "christmaspiratesboost",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 74,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -871,14 +598,6 @@
                   "position": "-5,-3,-1",
                   "scale": "2,2,1"
                 }
-              },
-              {
-                "Bundle": "_menus/_games/_single/christmaspiratesboost",
-                "Image": "ChristmasPirates_GameCard_1High_Foreground",
-                "Transform": {
-                  "position": "0,17,-2"
-                },
-                "Parallax": 0.5
               },
               {
                 "Bundle": "_menus/_games/_single/christmaspiratesboost",
@@ -950,7 +669,6 @@
       "excaliburboost": {
         "ID": "excaliburboost",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 14,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -1046,11 +764,11 @@
       "bridesmaids": {
         "ID": "bridesmaids",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 1,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
-          "CDNImageURL": "AA_sharedassets_placeholder.png"
+          "CDNImageURL": "AA_sharedassets_placeholder.png",
+          "ReleaseDate": "2018-09-25T19:00Z"
         },
         "FactoryType": "OKStandardMenuCardFactory",
         "Elements": {
@@ -1110,14 +828,6 @@
                   "position": "0,295,-3"
                 },
                 "Parallax": 1
-              },
-              {
-                "Bundle": "_menus/_games/_double/bridesmaids",
-                "Image": "bridesmaids_GameCard_Overlay",
-                "Transform": {
-                  "position": "0,-300,-25"
-                },
-                "Parallax": 0
               }
             ],
             "Bundle": "main",
@@ -1138,6 +848,9 @@
           },
           {
             "Key": "Challenge"
+          },
+          {
+            "Key": "Progressive"
           },
           {
             "Key": "Boost"
@@ -1167,16 +880,19 @@
               }
             ],
             "Bundle": "main",
-            "Prefab": "Prefabs/Menus/OKMenu/Cards/2x1GenericMenuCard"
+            "Prefab": "Prefabs/Menus/OKMenu/Cards/2X1RewardCard"
           }
         },
-        "OnClickAction": {},
-        "Decorators": []
+        "OnClickAction": {
+          "type": "Popup",
+          "popupName": "StoreDialog2A",
+          "bundleName": "main",
+          "prefabPath": "Prefabs/Dialogs"
+        }
       },
       "jungleboost": {
         "ID": "jungleboost",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 47,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -1264,7 +980,6 @@
       "screamineaglesmultiboost": {
         "ID": "screamineaglesmultiboost",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 62,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -1361,7 +1076,6 @@
       "sevenkingdomsboost": {
         "ID": "sevenkingdomsboost",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 24,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -1458,7 +1172,6 @@
       "arabiannights": {
         "ID": "arabiannights",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 80,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -1554,7 +1267,6 @@
           "Classic"
         ],
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 64,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -1650,7 +1362,6 @@
       "beanstalk": {
         "ID": "beanstalk",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 9,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -1743,7 +1454,6 @@
       "bellagio": {
         "ID": "bellagio",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 19,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -1836,7 +1546,6 @@
       "betrock": {
         "ID": "betrock",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 8,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -1932,7 +1641,6 @@
           "Classic"
         ],
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 56,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -2028,7 +1736,6 @@
       "betrockmulti": {
         "ID": "betrockmulti",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 25,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -2121,7 +1828,6 @@
       "betrocknights": {
         "ID": "betrocknights",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 8,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -2206,7 +1912,6 @@
       "bigfoot": {
         "ID": "bigfoot",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 70,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -2299,7 +2004,6 @@
       "buffalo": {
         "ID": "buffalo",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 39,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -2396,7 +2100,6 @@
           "Classic"
         ],
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 10,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -2492,7 +2195,6 @@
       "candy": {
         "ID": "candy",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 90,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -2585,7 +2287,6 @@
       "chilifire": {
         "ID": "chilifire",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 33,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -2689,7 +2390,6 @@
           "Classic"
         ],
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 56,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -2793,7 +2493,6 @@
           "Classic"
         ],
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 72,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -2881,7 +2580,6 @@
       "dragonslaw": {
         "ID": "dragonslaw",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 30,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -2989,7 +2687,6 @@
       "dragonswealth": {
         "ID": "dragonswealth",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 82,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -3082,7 +2779,6 @@
       "excalibur": {
         "ID": "excalibur",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 1,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -3178,8 +2874,7 @@
       "munsters": {
         "ID": "munsters",
         "MetaData": {
-          "EnableKey": "",
-          "UnlockLevel": 99,
+          "UnlockLevel": 1,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
           "CDNImageURL": "AA_sharedassets_placeholder.png"
@@ -3269,10 +2964,108 @@
           }
         ]
       },
+      "munsterslightninglab": {
+        "ID": "munsterslightninglab",
+        "MetaData": {
+          "UnlockLevel": 1,
+          "GambleUnlockLevel": -1,
+          "Availablility": "Available",
+          "CDNImageURL": "AA_sharedassets_placeholder.png",
+          "ReleaseDate": "2018-11-01T16:00Z"
+        },
+        "FactoryType": "OKStandardMenuCardFactory",
+        "Elements": {
+          "1": {
+            "Size": 1,
+            "Layers": [
+              {
+                "Bundle": "_menus/_games/_single/munsterslightninglab",
+                "Image": "MunstersLightningLab_GameCard_1High_Background",
+                "Transform": {
+                  "position": "-5,-3,-1",
+                  "scale": "2,2,1"
+                }
+              },
+              {
+                "Bundle": "_menus/_games/_single/munsterslightninglab",
+                "Image": "MunstersLightningLab_GameCard_1High_Foreground",
+                "Transform": {
+                  "position": "0,17,-2"
+                },
+                "Parallax": 0.5
+              },
+              {
+                "Bundle": "_menus/_games/_single/munsterslightninglab",
+                "Image": "MunstersLightningLab_GameCard_1High_Logo_Game",
+                "Transform": {
+                  "position": "0,64,-3"
+                },
+                "Parallax": 1
+              }
+            ],
+            "Bundle": "main",
+            "Prefab": "Prefabs/Menus/OKMenu/Cards/1X1MenuCard"
+          },
+          "2": {
+            "Size": 2,
+            "Layers": [
+              {
+                "Bundle": "_menus/_games/_double/munsterslightninglab",
+                "Image": "MunstersLightningLab_GameCard_Background",
+                "Transform": {
+                  "position": "0,-7,-1",
+                  "scale": "2,2,1"
+                }
+              },
+              {
+                "Bundle": "_menus/_games/_double/munsterslightninglab",
+                "Image": "MunstersLightningLab_GameCard_Foreground",
+                "Transform": {
+                  "position": "0,24,-2"
+                },
+                "Parallax": 0.5
+              },
+              {
+                "Bundle": "_menus/_games/_double/munsterslightninglab",
+                "Image": "MunstersLightningLab_GameCard_Logo_Game",
+                "Transform": {
+                  "position": "0,274,-3"
+                },
+                "Parallax": 1
+              },
+              {
+                "Bundle": "_menus/_games/_double/munsterslightninglab",
+                "Image": "MunstersLightningLab_GameCard_Snipe",
+                "Transform": {
+                  "position": "13,-259,-14"
+                },
+                "Parallax": 1
+              }
+            ],
+            "Bundle": "main",
+            "Prefab": "Prefabs/Menus/OKMenu/Cards/2X1MenuCard"
+          }
+        },
+        "BundleToDownload": "_games/munsterslightninglab",
+        "OnClickAction": {
+          "type": "Game",
+          "gameID": "MunstersLightningLab"
+        },
+        "Decorators": [
+          {
+            "Key": "GameCardAnalytics"
+          },
+          {
+            "Key": "Favorites"
+          },
+          {
+            "Key": "Challenge"
+          }
+        ]
+      },
       "forbiddenseven": {
         "ID": "forbiddenseven",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 12,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -3365,7 +3158,6 @@
       "forbidden7smulti": {
         "ID": "forbidden7smulti",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 41,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -3457,7 +3249,6 @@
       "friskyfortunes": {
         "ID": "friskyfortunes",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 66,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -3550,7 +3341,6 @@
       "friskygoose": {
         "ID": "friskygoose",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 88,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -3646,7 +3436,6 @@
           "Classic"
         ],
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 78,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -3737,7 +3526,6 @@
           "Classic"
         ],
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 16,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -3833,7 +3621,6 @@
       "gleelittlepigs": {
         "ID": "gleelittlepigs",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 84,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -3926,7 +3713,6 @@
       "goldengoosepp": {
         "ID": "goldengoosepp",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 60,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -4019,7 +3805,6 @@
       "granddragon": {
         "ID": "granddragon",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 2,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -4124,7 +3909,6 @@
       "hippodrome": {
         "ID": "hippodrome",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 58,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -4217,7 +4001,6 @@
       "jungle": {
         "ID": "jungle",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 5,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -4302,7 +4085,6 @@
       "kangaroocountry": {
         "ID": "kangaroocountry",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 27,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -4399,7 +4181,6 @@
           "Classic"
         ],
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 38,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -4507,7 +4288,6 @@
       "lotusland": {
         "ID": "lotusland",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 5,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -4616,12 +4396,10 @@
       "lotuslandmulti": {
         "ID": "lotuslandmulti",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 1,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
-          "CDNImageURL": "AA_sharedassets_placeholder.png",
-          "ReleaseDate": "2018-10-01T16:00Z"
+          "CDNImageURL": "AA_sharedassets_placeholder.png"
         },
         "FactoryType": "OKStandardMenuCardFactory",
         "Elements": {
@@ -4726,7 +4504,6 @@
       "luckybirds2": {
         "ID": "luckybirds2",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 18,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -4816,13 +4593,174 @@
           }
         ]
       },
+      "luckymei_promo": {
+        "ID": "luckymei_promo",
+        "MetaData": {
+          "HideIfCardShowing": "luckymei"
+        },
+        "FactoryType": "OKStandardMenuCardFactory",
+        "Elements": {
+          "2": {
+            "Size": 2,
+            "Layers": [
+              {
+                "Bundle": "_menus/_games/_double/luckymeicomingsoon",
+                "Image": "LuckyMei_Preview_GameCard_2High_Background",
+                "Transform": {
+                  "position": "0,-26,-1",
+                  "scale": "1,1.1,1"
+                }
+              },
+              {
+                "Bundle": "_menus/_games/_double/luckymeicomingsoon",
+                "Image": "LuckyMei_Preview_GameCard_2High_foreground",
+                "Transform": {
+                  "position": "0,17,-3"
+                },
+                "Parallax": 0.8
+              },
+              {
+                "Bundle": "_menus/_games/_double/luckymeicomingsoon",
+                "Image": "LuckyMei_Preview_GameCard_2High_LOGO",
+                "Transform": {
+                  "position": "0,250,-4"
+                },
+                "Parallax": 0.5
+              },
+              {
+                "Bundle": "_menus/_games/_double/luckymeicomingsoon",
+                "Image": "LuckyMei_Preview_GameCard_2High_comingsoon",
+                "Transform": {
+                  "position": "0,-180,-5"
+                },
+                "Parallax": 1
+              }
+            ],
+            "Bundle": "main",
+            "Prefab": "Prefabs/Menus/OKMenu/Cards/2x1GenericMenuCard"
+          }
+        },
+        "OnClickAction": {
+          "type": "Event",
+          "Event": "EarlyAccess_Card_Clicked"
+        },
+        "Decorators": [
+          {
+            "Key": "Progressive"
+          }
+        ]
+      },
+      "luckymei": {
+        "ID": "luckymei",
+        "MetaData": {
+          "UnlockLevel": 1,
+          "GambleUnlockLevel": -1,
+          "Availablility": "Available",
+          "CDNImageURL": "AA_sharedassets_placeholder.jpg"
+        },
+        "FactoryType": "OKStandardMenuCardFactory",
+        "Elements": {
+          "1": {
+            "Size": 1,
+            "Layers": [
+              {
+                "Bundle": "_menus/_games/_single/luckymei",
+                "Image": "LuckyMei_GameCard_1High_Background",
+                "Transform": {
+                  "position": "-5,-3,-1",
+                  "scale": "2,2,1"
+                }
+              },
+              {
+                "Bundle": "_menus/_games/_single/luckymei",
+                "Image": "LuckyMei_GameCard_1High_Foreground",
+                "Transform": {
+                  "position": "0,17,-2"
+                },
+                "Parallax": 0.5
+              },
+              {
+                "Bundle": "_menus/_games/_single/luckymei",
+                "Image": "LuckyMei_GameCard_1High_Logo_Game",
+                "Transform": {
+                  "position": "0,64,-3"
+                },
+                "Parallax": 1
+              }
+            ],
+            "Bundle": "main",
+            "Prefab": "Prefabs/Menus/OKMenu/Cards/1X1MenuCard"
+          },
+          "2": {
+            "Size": 2,
+            "Layers": [
+              {
+                "Bundle": "_menus/_games/_double/luckymei_lightninglink",
+                "Image": "LuckyMei_GameCard_Background",
+                "Transform": {
+                  "position": "0,-7,-1",
+                  "scale": "2,2,1"
+                }
+              },
+              {
+                "Bundle": "_menus/_games/_double/luckymei_lightninglink",
+                "Image": "LuckyMei_GameCard_Foreground",
+                "Transform": {
+                  "position": "0,24,-2"
+                },
+                "Parallax": 0.5
+              },
+              {
+                "Bundle": "_menus/_games/_double/luckymei_lightninglink",
+                "Image": "LuckyMei_GameCard_Logo_Game",
+                "Transform": {
+                  "position": "0,274,-3"
+                },
+                "Parallax": 1
+              },
+              {
+                "Bundle": "_menus/_games/_double/luckymei_lightninglink",
+                "Image": "LuckyMei_GameCard_smallLogo",
+                "Transform": {
+                  "position": "85,-160,-4",
+                  "scale": "0.75,0.75,1"
+                },
+                "Parallax": 0
+              }
+            ],
+            "Bundle": "main",
+            "Prefab": "Prefabs/Menus/OKMenu/Cards/2X1MenuCard"
+          }
+        },
+        "BundleToDownload": "_games/luckymei",
+        "OnClickAction": {
+          "type": "Game",
+          "gameID": "luckymei"
+        },
+        "Decorators": [
+          {
+            "Key": "GameCardAnalytics"
+          },
+          {
+            "Key": "Favorites"
+          },
+          {
+            "Key": "Challenge"
+          },
+          {
+            "Key": "Progressive"
+          },
+          {
+            "Key": "New"
+          }
+        ]
+      },
       "luxor": {
         "ID": "luxor",
         "Categories": [
           "Classic"
         ],
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 15,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -4921,7 +4859,6 @@
           "Classic"
         ],
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 29,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -5009,7 +4946,6 @@
       "maskedballnights": {
         "ID": "maskedballnights",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 38,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -5102,7 +5038,6 @@
       "mermaids": {
         "ID": "mermaids",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 50,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -5190,7 +5125,6 @@
           "Classic"
         ],
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 11,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -5289,7 +5223,6 @@
           "Classic"
         ],
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 11,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -5388,7 +5321,6 @@
           "Classic"
         ],
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 29,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -5487,7 +5419,6 @@
           "Classic"
         ],
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 92,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -5583,7 +5514,6 @@
       "mustangfortune": {
         "ID": "mustangfortune",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 32,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -5695,7 +5625,6 @@
           "Classic"
         ],
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 15,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -5791,7 +5720,6 @@
       "ometsgold": {
         "ID": "ometsgold",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 20,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -5884,7 +5812,6 @@
       "oz": {
         "ID": "oz",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 21,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -5977,7 +5904,6 @@
       "ozalo": {
         "ID": "ozalo",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 68,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -6073,7 +5999,6 @@
           "Classic"
         ],
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 72,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -6161,7 +6086,6 @@
       "persephone": {
         "ID": "persephone",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 86,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -6257,7 +6181,6 @@
           "Classic"
         ],
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 92,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -6346,7 +6269,6 @@
       "redrock": {
         "ID": "redrock",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 76,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -6442,7 +6364,6 @@
           "Classic"
         ],
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 78,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -6541,7 +6462,6 @@
           "Classic"
         ],
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 84,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -6637,7 +6557,6 @@
       "roamingreels": {
         "ID": "roamingreels",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 96,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -6743,7 +6662,6 @@
       "romancegame": {
         "ID": "romancegame",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 44,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -6836,7 +6754,6 @@
       "savageeyes": {
         "ID": "savageeyes",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 45,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -6937,7 +6854,6 @@
       "screamineagles": {
         "ID": "screamineagles",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 53,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -7030,7 +6946,6 @@
       "screamineaglesmulti": {
         "ID": "screamineaglesmulti",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 5,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -7124,7 +7039,6 @@
       "sevenkingdoms": {
         "ID": "sevenkingdoms",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 5,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -7220,7 +7134,6 @@
           "Classic"
         ],
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 64,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -7316,7 +7229,6 @@
       "spacecowboy": {
         "ID": "spacecowboy",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 52,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -7402,7 +7314,6 @@
       "thundercash": {
         "ID": "thundercash",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 4,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -7503,7 +7414,6 @@
       "treasurebowl": {
         "ID": "treasurebowl",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 94,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -7592,7 +7502,6 @@
       "werewolf": {
         "ID": "werewolf",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 98,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -7686,7 +7595,6 @@
       "aliceteaparty": {
         "ID": "aliceteaparty",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 1,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -7779,7 +7687,6 @@
       "shaqmulti": {
         "ID": "shaqmulti",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 1,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -7874,7 +7781,6 @@
       "tbd": {
         "ID": "tbd",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 1,
           "GambleUnlockLevel": -1,
           "Availablility": "Available",
@@ -7921,7 +7827,6 @@
       "journey-mystrip": {
         "ID": "journey_mystrip",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 5
         },
         "FactoryType": "OKStandardMenuCardFactory",
@@ -7968,7 +7873,6 @@
       "journey-downtown": {
         "ID": "journey_downtown",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 16
         },
         "FactoryType": "OKStandardMenuCardFactory",
@@ -8015,7 +7919,6 @@
       "journey-shaqjourney": {
         "ID": "journey_shaqjourney",
         "MetaData": {
-          "EnableKey": "",
           "UnlockLevel": 10
         },
         "FactoryType": "OKStandardMenuCardFactory",
@@ -9407,6 +9310,155 @@
             }
           }
         ]
+      },
+      "bridesmaids_promo": {
+        "ID": "bridesmaids_promo",
+        "MetaData": {
+          "HideIfCardShowing": "bridesmaids"
+        },
+        "FactoryType": "OKStandardMenuCardFactory",
+        "Elements": {
+          "2": {
+            "Size": 2,
+            "Layers": [
+              {
+                "Bundle": "_menus/_games/_double/bridesmaidscomingsoon",
+                "Image": "BridesmaidsCS_GameCard_Background",
+                "Transform": {
+                  "position": "0,-26,-1"
+                }
+              },
+              {
+                "Bundle": "_menus/_games/_double/bridesmaidscomingsoon",
+                "Image": "BridesmaidsCS_GameCard_Logo_Game",
+                "Transform": {
+                  "position": "0,166,-3"
+                },
+                "Parallax": 1
+              }
+            ],
+            "Bundle": "main",
+            "Prefab": "Prefabs/Menus/OKMenu/Cards/2x1GenericMenuCard"
+          }
+        },
+        "OnClickAction": {
+          "type": "Event",
+          "Event": "EarlyAccess_Card_Clicked"
+        },
+        "Decorators": []
+      },
+      "luckymeicomingsoon": {
+        "FactoryType": "OKStandardMenuCardFactory",
+        "Elements": {
+          "2": {
+            "Size": 2,
+            "Layers": [
+              {
+                "Bundle": "_menus/_games/_double/luckymeicomingsoon",
+                "Image": "LuckyMei_Preview_GameCard_2High_Background",
+                "Transform": {
+                  "position": "0,-26,-1",
+                  "scale": "1,1.1,1"
+                }
+              },
+              {
+                "Bundle": "_menus/_games/_double/luckymeicomingsoon",
+                "Image": "LuckyMei_Preview_GameCard_2High_foreground",
+                "Transform": {
+                  "position": "0,17,-3"
+                },
+                "Parallax": 0.8
+              },
+              {
+                "Bundle": "_menus/_games/_double/luckymeicomingsoon",
+                "Image": "LuckyMei_Preview_GameCard_2High_LOGO",
+                "Transform": {
+                  "position": "0,250,-4"
+                },
+                "Parallax": 0.5
+              },
+              {
+                "Bundle": "_menus/_games/_double/luckymeicomingsoon",
+                "Image": "LuckyMei_Preview_GameCard_2High_comingsoon",
+                "Transform": {
+                  "position": "0,-180,-5"
+                },
+                "Parallax": 1
+              }
+            ],
+            "Bundle": "main",
+            "Prefab": "Prefabs/Menus/OKMenu/Cards/2x1GenericMenuCard"
+          }
+        },
+        "OnClickAction": {},
+        "Decorators": [
+          {
+            "Key": "Progressive"
+          }
+        ]
+      },
+      "purchasecards_customoffer": {
+        "FactoryType": "OKStandardMenuCardFactory",
+        "Elements": {
+          "2": {
+            "Size": 2,
+            "Layers": [
+              {
+                "Bundle": "_menus/_purchase/purchasecards",
+                "Image": "PurchaseCardFG",
+                "Transform": {
+                  "position": "-1,-2,-2",
+                  "scale": "2,2,1"
+                }
+              },
+              {
+                "Bundle": "_menus/_purchase/purchasecards",
+                "Transform": {
+                  "position": "-1,-102,-3",
+                  "scale": "1.75,1.75,1",
+                  "rotation": "0,0,-7.5"
+                },
+                "Object": "TextObject_Amount",
+                "OverrideKey": "TotalValue"
+              },
+              {
+                "Bundle": "_menus/_purchase/purchasecards",
+                "Object": "TextObject_Percent",
+                "Transform": {
+                  "position": "-1,251,-4",
+                  "scale": "1.25,1.25,1"
+                },
+                "OverrideKey": "BonusPercent"
+              },
+              {
+                "Bundle": "_menus/_purchase/purchasecards",
+                "Object": "TextObject_Price",
+                "Transform": {
+                  "position": "-1,-390,-31",
+                  "scale": "0.6,0.6,1"
+                },
+                "OverrideKey": "Price"
+              }
+            ],
+            "Bundle": "main",
+            "Prefab": "Prefabs/Menus/OKMenu/Cards/2X1PromoCard"
+          }
+        },
+        "OnClickAction": {
+          "type": "Purchase",
+          "customOfferID": "customoffer1"
+        },
+        "Decorators": [
+          {
+            "Key": "Purchase",
+            "MetaData": {
+              "customOfferID": "customoffer1",
+              "TotalChipAmount_short": "TotalValue",
+              "ChipBonus": "BonusPercent",
+              "PriceAmount": "Price"
+            }
+          }
+        ]
       }
     },
     "Hud": {
@@ -9418,7 +9470,7 @@
         "transform": {
           "position": "185,45,0"
         },
-        "metaData": {
+        "MetaData": {
           "dataSource": "PromoMenu"
         }
       },
@@ -9519,7 +9571,7 @@
         "anchor": "TopLeft",
         "transform": {
           "position": "140,-70,-7",
-          "useUnmodifiedPositionY": "true"
+          "useUnmodifiedPositionY": true
         },
         "actions": [],
         "MetaData": {
@@ -9640,7 +9692,7 @@
             "analytics": "st1:Navigation|st2:Journey_Menu"
           }
         },
-        "metaData": {
+        "MetaData": {
           "LandingView": "MainMenu",
           "Categories": "Games|Rewards|Wallet|Journeys",
           "Games": "name:Games|id:GamesMenu|action:games|sub:AllGames|sub:Favorites|sub:Jackpots",
@@ -9680,7 +9732,7 @@
             "sortCategory": "PropertyButtonView"
           }
         },
-        "metaData": {
+        "MetaData": {
           "GamesMenu_Favorite": "text:Your Favorite Games go here! Tap the heart icon on any game card to select them as your Favorites.|buttonText:Games|buttonAction:games",
           "WalletMenu": "text:Your wallet is currently empty. Use Loyalty Points to redeem real Rewards!|buttonText:Rewards|buttonAction:rewards",
           "RewardsMenu": "text:New rewards will be coming for this partner!|buttonText:Rewards|buttonAction:rewards"
@@ -9693,9 +9745,9 @@
         "anchor": "Top",
         "transform": {
           "position": "0,-85,-10",
-          "useUnmodifiedPositionY": "true"
+          "useUnmodifiedPositionY": true
         },
-        "metaData": {}
+        "MetaData": {}
       },
       "OKChipMeter": {
         "type": "OKChipMeter",
@@ -9703,9 +9755,9 @@
         "path": "Prefabs/Menus/OKMenu/UI/OKChipMeter",
         "parentElement": "OKTopHud",
         "transform": {
-          "position": "493,15,-7"
+          "position": "710,12.5,-7"
         },
-        "metaData": {}
+        "MetaData": {}
       },
       "OKLoyaltyMeter": {
         "type": "OKLoyaltyMeter",
@@ -9713,9 +9765,9 @@
         "path": "Prefabs/Menus/OKMenu/UI/OKLoyaltyMeter",
         "parentElement": "OKTopHud",
         "transform": {
-          "position": "48,15,-7"
+          "position": "-300,12.5,-7"
         },
-        "metaData": {}
+        "MetaData": {}
       },
       "OKExperienceMeter": {
         "type": "OKExperienceMeter",
@@ -9723,9 +9775,9 @@
         "path": "Prefabs/Menus/OKMenu/UI/OKExperienceMeter",
         "parentElement": "OKTopHud",
         "transform": {
-          "position": "-278,15,-7"
+          "position": "-600,12.5,-7"
         },
-        "metaData": {}
+        "MetaData": {}
       },
       "OKVIPButton": {
         "type": "OKVIPButton",
@@ -9733,9 +9785,9 @@
         "path": "Prefabs/Menus/OKMenu/UI/OKVIPButton",
         "parentElement": "OKTopHud",
         "transform": {
-          "position": "-700,15,-7"
+          "position": "320,12.5,-7"
         },
-        "metaData": {}
+        "MetaData": {}
       },
       "OKHUDSettingButton": {
         "type": "OKHudSettingsButton",
@@ -9743,10 +9795,10 @@
         "path": "Prefabs/Menus/OKMenu/UI/OKHUDSettingButton",
         "anchor": "TopRight",
         "transform": {
-          "position": "-100,-70,-7",
-          "useUnmodifiedPositionY": "true"
+          "position": "-74,-72,-7",
+          "useUnmodifiedPositionY": true
         },
-        "metaData": {}
+        "MetaData": {}
       },
       "OKBonusBubblyButton": {
         "type": "OKBonusBubblyButton",
@@ -9754,9 +9806,19 @@
         "path": "Prefabs/Menus/OKMenu/UI/OKBonusBubblyButton",
         "parentElement": "OKTopHud",
         "transform": {
-          "position": "-148,1500,500"
+          "position": "777,2000,-7"
         },
-        "metaData": {}
+        "MetaData": {}
+      },
+      "OKCentralBuyButton": {
+        "type": "OKCentralBuyButton",
+        "bundle": "main",
+        "path": "Prefabs/Menus/OKMenu/UI/OKCentralBuyButton",
+        "parentElement": "OKTopHud",
+        "transform": {
+          "position": "0,1,-7"
+        },
+        "MetaData": {}
       }
     },
     "CardDecorators": {
@@ -9864,11 +9926,100 @@
           }
         ]
       },
+      "EarlyAccess_unlock": {
+        "type": "OKMenuCardDecoratorLayer",
+        "Layers": [
+          {
+            "Bundle": "_meta/_earlyaccess/default",
+            "Object": "Prefabs/EarlyAccess_FrameMaster_unlock",
+            "Transform": {
+              "position": "0,-55.7,-40"
+            }
+          }
+        ]
+      },
       "ConditionalCustomOffer": {
         "type": "OKMenuCardConditionalDecoratorCustomOffer"
       },
       "ConditionalDynamicOffer": {
         "type": "OKMenuCardConditionalDecoratorDynamicOffer"
+      },
+      "Featured": {
+        "type": "OKMenuCardDecoratorLayer",
+        "Layers": [
+          {
+            "Bundle": "_meta/_lobbydecorators/lobby_decorators",
+            "attachLocation": "Bottom",
+            "Object": "Prefabs/LobbyDecorator_Featured",
+            "Transform": {
+              "position": "0,0,0"
+            }
+          }
+        ]
+      },
+      "HighLimit": {
+        "type": "OKMenuCardDecoratorLayer",
+        "Layers": [
+          {
+            "Bundle": "_meta/_lobbydecorators/lobby_decorators",
+            "attachLocation": "Bottom",
+            "Object": "Prefabs/LobbyDecorator_HighLimit",
+            "Transform": {
+              "position": "0,0,0"
+            }
+          }
+        ]
+      },
+      "HighRoller": {
+        "type": "OKMenuCardDecoratorLayer",
+        "Layers": [
+          {
+            "Bundle": "_meta/_lobbydecorators/lobby_decorators",
+            "attachLocation": "Bottom",
+            "Object": "Prefabs/LobbyDecorator_HighRoller",
+            "Transform": {
+              "position": "0,0,0"
+            }
+          }
+        ]
+      },
+      "Hot": {
+        "type": "OKMenuCardDecoratorLayer",
+        "Layers": [
+          {
+            "Bundle": "_meta/_lobbydecorators/lobby_decorators",
+            "attachLocation": "Left",
+            "Object": "Prefabs/LobbyDecorator_Hot",
+            "Transform": {
+              "position": "0,0,0"
+            }
+          }
+        ]
+      },
+      "New": {
+        "type": "OKMenuCardDecoratorLayer",
+        "Layers": [
+          {
+            "Bundle": "_meta/_lobbydecorators/lobby_decorators",
+            "Object": "Prefabs/LobbyDecorator_New",
+            "Transform": {
+              "position": "-180,180,-7"
+            }
+          }
+        ]
+      },
+      "Popular": {
+        "type": "OKMenuCardDecoratorLayer",
+        "Layers": [
+          {
+            "Bundle": "_meta/_lobbydecorators/lobby_decorators",
+            "attachLocation": "Left",
+            "Object": "Prefabs/LobbyDecorator_Popular",
+            "Transform": {
+              "position": "0,0,0"
+            }
+          }
+        ]
       }
     },
     "MenuDecorators": {
@@ -9893,13 +10044,6 @@
           "Delay": "0.25",
           "Frequency": "PerMenuView"
         }
-      },
-      "ChipRecovery": {
-        "type": "ChipRecoveryDecorator",
-        "MetaData": {
-          "IsUpdate": "false",
-          "Delay": "0.25"
-        }
       }
     }
   },
@@ -9911,108 +10055,63 @@
         "MenuCards": {
           "default": [
             {
-              "CardConfig": "Promo_VIP_Narrow",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
+              "CardConfig": "Promo_VIP_Narrow"
             },
             {
-              "CardConfig": "Promo_rewards_Narrow",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
+              "CardConfig": "Promo_rewards_Narrow"
             },
             {
-              "CardConfig": "Promo_Facebook_Narrow",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
+              "CardConfig": "Promo_Facebook_Narrow"
             },
             {
-              "CardConfig": "Promo_store_Narrow",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
+              "CardConfig": "Promo_store_Narrow"
             },
             {
-              "CardConfig": "Promo_DO_Narrow",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
+              "CardConfig": "Promo_DO_Narrow"
             },
             {
-              "CardConfig": "Promo_CS_Narrow",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
+              "CardConfig": "Promo_CS_Narrow"
             },
             {
-              "CardConfig": "Promo_VIP",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
+              "CardConfig": "Promo_VIP"
             },
             {
-              "CardConfig": "Promo_rewards",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
+              "CardConfig": "Promo_rewards"
             },
             {
-              "CardConfig": "Promo_Facebook",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
+              "CardConfig": "Promo_Facebook"
             },
             {
-              "CardConfig": "Promo_store",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
+              "CardConfig": "Promo_store"
             },
             {
-              "CardConfig": "Promo_DO",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
+              "CardConfig": "Promo_DO"
             },
             {
-              "CardConfig": "Promo_CS",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
+              "CardConfig": "Promo_CS"
             }
           ]
         },
-        "Decorators": [
-          {
-            "Key": "Leanplum",
-            "MetaData": {
-              "Menu": "PromoMenu"
-            }
-          }
-        ]
+        "Decorators": []
       },
       "GamesMenu": {
         "ViewType": "default",
+        "ScrollView": {
+          "LeftCardDistancePercent": 8.9,
+          "RightCardDistancePercent": 1.1,
+          "transform": {
+            "position": "200,0,0"
+          }
+        },
         "HudElements": [
           {
             "Key": "OKTopHud"
           },
           {
             "Key": "OKChipMeter"
+          },
+          {
+            "Key": "OKCentralBuyButton"
           },
           {
             "Key": "OKLoyaltyMeter"
@@ -10054,1134 +10153,15 @@
             "Key": "DoubleXPMeter"
           },
           {
-            "Key": "CustomOfferMeter"
-          },
-          {
             "Key": "OKBonusBubblyButton"
           },
           {
             "Key": "OKEmptyCardViewMessage"
           }
         ],
-        "MenuCards": {
-          "default": [
-            {
-              "CardConfig": "lotuslandmulti",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "elsenor",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "excalibur",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "bridesmaids",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "shaqmulti",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "granddragon",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "thundercash",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "lotusland",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "betrock",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "beanstalk",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "caddyshaq",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "mirage",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "mgm",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "Pop_Crosspromo",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "double_reward_mgm",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "forbiddenseven",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "excaliburboost",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "luxor",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "nyny",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "Konami_Crosspromo",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "glee",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "luckybirds2",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "bellagio",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "ometsgold",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "oz",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "sevenkingdomsboost",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "betrockmulti",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "kangaroocountry",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "mandalaybay",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "miragewildlife",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "double_reward_mandalaybay",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "dragonslaw",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "mustangfortune",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "chilifire",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "betrocknightsboost",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "lionfestival",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "maskedballnights",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "buffalo",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "forbidden7smulti",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "romancegame",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "savageeyes",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "jungleboost",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "mermaids",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "spacecowboy",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "screamineagles",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "betrock2",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "chinamystery",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "hippodrome",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "goldengoosepp",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "screamineaglesmultiboost",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "sheerluckhound",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "atw",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "friskyfortunes",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "ozalo",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "bigfoot",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "crystalplanet",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "panda",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "christmaspiratesboost",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "redrock",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "frontier",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "reelamigos",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "arabiannights",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "dragonswealth",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "reelchef",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "gleelittlepigs",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "persephone",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "friskygoose",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "candy",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "piratescove",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "monstermaniacs",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "treasurebowl",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "roamingreels",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "werewolf",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "munsters",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            }
-          ],
-          "wide": [
-            {
-              "CardConfig": "elsenor",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "bridesmaids",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "excalibur",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "shaqmulti",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "granddragon",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "thundercash",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "lotusland",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "betrock",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "beanstalk",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "caddyshaq",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "mirage",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "mgm",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "Pop_Crosspromo",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "double_reward_mgm",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "forbiddenseven",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "excaliburboost",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "luxor",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "nyny",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "Konami_Crosspromo",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "glee",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "luckybirds2",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "bellagio",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "ometsgold",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "oz",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "sevenkingdomsboost",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "betrockmulti",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "kangaroocountry",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "mandalaybay",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "miragewildlife",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "double_reward_mandalaybay",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "dragonslaw",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "mustangfortune",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "chilifire",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "betrocknightsboost",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "lionfestival",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "maskedballnights",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "buffalo",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "forbidden7smulti",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "romancegame",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "savageeyes",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "jungleboost",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "mermaids",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "spacecowboy",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "screamineagles",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "betrock2",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "chinamystery",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "hippodrome",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "goldengoosepp",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "screamineaglesmultiboost",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "sheerluckhound",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "atw",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "friskyfortunes",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "ozalo",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "bigfoot",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "crystalplanet",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "panda",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "christmaspiratesboost",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "redrock",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "frontier",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "reelamigos",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "arabiannights",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "dragonswealth",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "reelchef",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "gleelittlepigs",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "persephone",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "friskygoose",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "candy",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "piratescove",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "monstermaniacs",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "treasurebowl",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "roamingreels",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "werewolf",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            },
-            {
-              "CardConfig": "munsters",
-              "Size": 2,
-              "Height": 2,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
-            }
-          ]
-        },
-        "Decor": [
-          {
-            "bundle": "",
-            "path": "",
-            "transform": {
-              "position": "-10,3,10"
-            }
-          }
-        ],
-        "ScrollView": {
-          "LeftCardDistancePercent": 8.9,
-          "RightCardDistancePercent": 2.1,
-          "transform": {
-            "position": "200,0,0"
-          }
-        },
         "Decorators": [
           {
-            "Key": "ChipRecovery",
-            "MetaData": {
-              "Menu": "GamesMenu"
-            }
-          },
-          {
             "Key": "CouponRedemption",
-            "MetaData": {
-              "Menu": "GamesMenu"
-            }
-          },
-          {
-            "Key": "Leanplum",
             "MetaData": {
               "Menu": "GamesMenu"
             }
@@ -11191,17 +10171,645 @@
             "MetaData": {
               "Menu": "GamesMenu"
             }
+          },
+          {
+            "Key": "Leanplum",
+            "MetaData": {
+              "Menu": "GamesMenu"
+            }
           }
-        ]
+        ],
+        "Decor": [
+          {
+            "bundle": "",
+            "path": "",
+            "transform": {
+              "position": "-10,3,10"
+            }
+          }
+        ],
+        "MenuCards": {
+          "default": [
+            {
+              "CardConfig": "luckymei",
+              "Size": 2
+            },
+            {
+              "CardConfig": "bridesmaids",
+              "Size": 2
+            },
+            {
+              "CardConfig": "excalibur",
+              "Size": 2
+            },
+            {
+              "CardConfig": "munsters",
+              "Size": 2
+            },
+            {
+              "CardConfig": "lotuslandmulti",
+              "Size": 2
+            },
+            {
+              "CardConfig": "elsenor",
+              "Size": 2
+            },
+            {
+              "CardConfig": "shaqmulti",
+              "Size": 2
+            },
+            {
+              "CardConfig": "granddragon",
+              "Size": 2
+            },
+            {
+              "CardConfig": "thundercash",
+              "Size": 2
+            },
+            {
+              "CardConfig": "lotusland",
+              "Size": 2
+            },
+            {
+              "CardConfig": "betrock",
+              "Size": 2
+            },
+            {
+              "CardConfig": "beanstalk",
+              "Size": 2
+            },
+            {
+              "CardConfig": "caddyshaq",
+              "Size": 2
+            },
+            {
+              "CardConfig": "mirage",
+              "Size": 1
+            },
+            {
+              "CardConfig": "mgm",
+              "Size": 1
+            },
+            {
+              "CardConfig": "Konami_Crosspromo",
+              "Size": 2
+            },
+            {
+              "CardConfig": "double_reward_mgm",
+              "Size": 2
+            },
+            {
+              "CardConfig": "forbiddenseven",
+              "Size": 2
+            },
+            {
+              "CardConfig": "excaliburboost",
+              "Size": 2
+            },
+            {
+              "CardConfig": "luxor",
+              "Size": 1
+            },
+            {
+              "CardConfig": "nyny",
+              "Size": 1
+            },
+            {
+              "CardConfig": "Pop_Crosspromo",
+              "Size": 2
+            },
+            {
+              "CardConfig": "glee",
+              "Size": 1
+            },
+            {
+              "CardConfig": "luckybirds2",
+              "Size": 1
+            },
+            {
+              "CardConfig": "bellagio",
+              "Size": 1
+            },
+            {
+              "CardConfig": "ometsgold",
+              "Size": 1
+            },
+            {
+              "CardConfig": "oz",
+              "Size": 1
+            },
+            {
+              "CardConfig": "sevenkingdomsboost",
+              "Size": 1
+            },
+            {
+              "CardConfig": "betrockmulti",
+              "Size": 2
+            },
+            {
+              "CardConfig": "kangaroocountry",
+              "Size": 2
+            },
+            {
+              "CardConfig": "mandalaybay",
+              "Size": 1
+            },
+            {
+              "CardConfig": "miragewildlife",
+              "Size": 1
+            },
+            {
+              "CardConfig": "double_reward_mandalaybay",
+              "Size": 2
+            },
+            {
+              "CardConfig": "dragonslaw",
+              "Size": 2
+            },
+            {
+              "CardConfig": "mustangfortune",
+              "Size": 2
+            },
+            {
+              "CardConfig": "chilifire",
+              "Size": 2
+            },
+            {
+              "CardConfig": "betrocknightsboost",
+              "Size": 2
+            },
+            {
+              "CardConfig": "lionfestival",
+              "Size": 1
+            },
+            {
+              "CardConfig": "maskedballnights",
+              "Size": 1
+            },
+            {
+              "CardConfig": "buffalo",
+              "Size": 1
+            },
+            {
+              "CardConfig": "forbidden7smulti",
+              "Size": 1
+            },
+            {
+              "CardConfig": "romancegame",
+              "Size": 1
+            },
+            {
+              "CardConfig": "savageeyes",
+              "Size": 2
+            },
+            {
+              "CardConfig": "jungleboost",
+              "Size": 2
+            },
+            {
+              "CardConfig": "mermaids",
+              "Size": 1
+            },
+            {
+              "CardConfig": "spacecowboy",
+              "Size": 1
+            },
+            {
+              "CardConfig": "screamineagles",
+              "Size": 1
+            },
+            {
+              "CardConfig": "betrock2",
+              "Size": 1
+            },
+            {
+              "CardConfig": "chinamystery",
+              "Size": 1
+            },
+            {
+              "CardConfig": "hippodrome",
+              "Size": 1
+            },
+            {
+              "CardConfig": "goldengoosepp",
+              "Size": 1
+            },
+            {
+              "CardConfig": "screamineaglesmultiboost",
+              "Size": 2
+            },
+            {
+              "CardConfig": "sheerluckhound",
+              "Size": 1
+            },
+            {
+              "CardConfig": "atw",
+              "Size": 1
+            },
+            {
+              "CardConfig": "friskyfortunes",
+              "Size": 1
+            },
+            {
+              "CardConfig": "ozalo",
+              "Size": 1
+            },
+            {
+              "CardConfig": "bigfoot",
+              "Size": 1
+            },
+            {
+              "CardConfig": "crystalplanet",
+              "Size": 1
+            },
+            {
+              "CardConfig": "panda",
+              "Size": 1
+            },
+            {
+              "CardConfig": "christmaspiratesboost",
+              "Size": 1
+            },
+            {
+              "CardConfig": "redrock",
+              "Size": 1
+            },
+            {
+              "CardConfig": "frontier",
+              "Size": 1
+            },
+            {
+              "CardConfig": "reelamigos",
+              "Size": 1
+            },
+            {
+              "CardConfig": "arabiannights",
+              "Size": 1
+            },
+            {
+              "CardConfig": "dragonswealth",
+              "Size": 1
+            },
+            {
+              "CardConfig": "reelchef",
+              "Size": 1
+            },
+            {
+              "CardConfig": "gleelittlepigs",
+              "Size": 1
+            },
+            {
+              "CardConfig": "persephone",
+              "Size": 1
+            },
+            {
+              "CardConfig": "friskygoose",
+              "Size": 1
+            },
+            {
+              "CardConfig": "candy",
+              "Size": 1
+            },
+            {
+              "CardConfig": "piratescove",
+              "Size": 1
+            },
+            {
+              "CardConfig": "monstermaniacs",
+              "Size": 1
+            },
+            {
+              "CardConfig": "treasurebowl",
+              "Size": 1
+            },
+            {
+              "CardConfig": "roamingreels",
+              "Size": 1
+            },
+            {
+              "CardConfig": "werewolf",
+              "Size": 1
+            }
+          ],
+          "wide": [
+            {
+              "CardConfig": "luckymei",
+              "Size": 2
+            },
+            {
+              "CardConfig": "bridesmaids",
+              "Size": 2
+            },
+            {
+              "CardConfig": "excalibur",
+              "Size": 2
+            },
+            {
+              "CardConfig": "munsters",
+              "Size": 2
+            },
+            {
+              "CardConfig": "lotuslandmulti",
+              "Size": 2
+            },
+            {
+              "CardConfig": "elsenor",
+              "Size": 2
+            },
+            {
+              "CardConfig": "shaqmulti",
+              "Size": 2
+            },
+            {
+              "CardConfig": "granddragon",
+              "Size": 2
+            },
+            {
+              "CardConfig": "thundercash",
+              "Size": 2
+            },
+            {
+              "CardConfig": "lotusland",
+              "Size": 2
+            },
+            {
+              "CardConfig": "betrock",
+              "Size": 2
+            },
+            {
+              "CardConfig": "beanstalk",
+              "Size": 2
+            },
+            {
+              "CardConfig": "caddyshaq",
+              "Size": 2
+            },
+            {
+              "CardConfig": "mirage",
+              "Size": 1
+            },
+            {
+              "CardConfig": "mgm",
+              "Size": 1
+            },
+            {
+              "CardConfig": "Konami_Crosspromo",
+              "Size": 2
+            },
+            {
+              "CardConfig": "double_reward_mgm",
+              "Size": 2
+            },
+            {
+              "CardConfig": "forbiddenseven",
+              "Size": 2
+            },
+            {
+              "CardConfig": "excaliburboost",
+              "Size": 2
+            },
+            {
+              "CardConfig": "luxor",
+              "Size": 1
+            },
+            {
+              "CardConfig": "nyny",
+              "Size": 1
+            },
+            {
+              "CardConfig": "Pop_Crosspromo",
+              "Size": 2
+            },
+            {
+              "CardConfig": "glee",
+              "Size": 1
+            },
+            {
+              "CardConfig": "luckybirds2",
+              "Size": 1
+            },
+            {
+              "CardConfig": "bellagio",
+              "Size": 1
+            },
+            {
+              "CardConfig": "ometsgold",
+              "Size": 1
+            },
+            {
+              "CardConfig": "oz",
+              "Size": 1
+            },
+            {
+              "CardConfig": "sevenkingdomsboost",
+              "Size": 1
+            },
+            {
+              "CardConfig": "betrockmulti",
+              "Size": 2
+            },
+            {
+              "CardConfig": "kangaroocountry",
+              "Size": 2
+            },
+            {
+              "CardConfig": "mandalaybay",
+              "Size": 1
+            },
+            {
+              "CardConfig": "miragewildlife",
+              "Size": 1
+            },
+            {
+              "CardConfig": "double_reward_mandalaybay",
+              "Size": 2
+            },
+            {
+              "CardConfig": "dragonslaw",
+              "Size": 2
+            },
+            {
+              "CardConfig": "mustangfortune",
+              "Size": 2
+            },
+            {
+              "CardConfig": "chilifire",
+              "Size": 2
+            },
+            {
+              "CardConfig": "betrocknightsboost",
+              "Size": 2
+            },
+            {
+              "CardConfig": "lionfestival",
+              "Size": 1
+            },
+            {
+              "CardConfig": "maskedballnights",
+              "Size": 1
+            },
+            {
+              "CardConfig": "buffalo",
+              "Size": 1
+            },
+            {
+              "CardConfig": "forbidden7smulti",
+              "Size": 1
+            },
+            {
+              "CardConfig": "romancegame",
+              "Size": 1
+            },
+            {
+              "CardConfig": "savageeyes",
+              "Size": 2
+            },
+            {
+              "CardConfig": "jungleboost",
+              "Size": 2
+            },
+            {
+              "CardConfig": "mermaids",
+              "Size": 1
+            },
+            {
+              "CardConfig": "spacecowboy",
+              "Size": 1
+            },
+            {
+              "CardConfig": "screamineagles",
+              "Size": 1
+            },
+            {
+              "CardConfig": "betrock2",
+              "Size": 1
+            },
+            {
+              "CardConfig": "chinamystery",
+              "Size": 1
+            },
+            {
+              "CardConfig": "hippodrome",
+              "Size": 1
+            },
+            {
+              "CardConfig": "goldengoosepp",
+              "Size": 1
+            },
+            {
+              "CardConfig": "screamineaglesmultiboost",
+              "Size": 2
+            },
+            {
+              "CardConfig": "sheerluckhound",
+              "Size": 1
+            },
+            {
+              "CardConfig": "atw",
+              "Size": 1
+            },
+            {
+              "CardConfig": "friskyfortunes",
+              "Size": 1
+            },
+            {
+              "CardConfig": "ozalo",
+              "Size": 1
+            },
+            {
+              "CardConfig": "bigfoot",
+              "Size": 1
+            },
+            {
+              "CardConfig": "crystalplanet",
+              "Size": 1
+            },
+            {
+              "CardConfig": "panda",
+              "Size": 1
+            },
+            {
+              "CardConfig": "christmaspiratesboost",
+              "Size": 1
+            },
+            {
+              "CardConfig": "redrock",
+              "Size": 1
+            },
+            {
+              "CardConfig": "frontier",
+              "Size": 1
+            },
+            {
+              "CardConfig": "reelamigos",
+              "Size": 1
+            },
+            {
+              "CardConfig": "arabiannights",
+              "Size": 1
+            },
+            {
+              "CardConfig": "dragonswealth",
+              "Size": 1
+            },
+            {
+              "CardConfig": "reelchef",
+              "Size": 1
+            },
+            {
+              "CardConfig": "gleelittlepigs",
+              "Size": 1
+            },
+            {
+              "CardConfig": "persephone",
+              "Size": 1
+            },
+            {
+              "CardConfig": "friskygoose",
+              "Size": 1
+            },
+            {
+              "CardConfig": "candy",
+              "Size": 1
+            },
+            {
+              "CardConfig": "piratescove",
+              "Size": 1
+            },
+            {
+              "CardConfig": "monstermaniacs",
+              "Size": 1
+            },
+            {
+              "CardConfig": "treasurebowl",
+              "Size": 1
+            },
+            {
+              "CardConfig": "roamingreels",
+              "Size": 1
+            },
+            {
+              "CardConfig": "werewolf",
+              "Size": 1
+            }
+          ]
+        }
       },
       "JourneysMenu": {
         "ViewType": "default",
+        "ScrollView": {
+          "LeftCardDistancePercent": 0.6,
+          "RightCardDistancePercent": 1.2
+        },
         "HudElements": [
           {
             "Key": "OKTopHud"
           },
           {
             "Key": "OKChipMeter"
+          },
+          {
+            "Key": "OKCentralBuyButton"
           },
           {
             "Key": "OKLoyaltyMeter"
@@ -11240,9 +10848,6 @@
             "Key": "DoubleXPMeter"
           },
           {
-            "Key": "CustomOfferMeter"
-          },
-          {
             "Key": "OKBonusBubblyButton"
           },
           {
@@ -11252,49 +10857,33 @@
         "MenuCards": {
           "default": [
             {
-              "CardConfig": "journey-mystrip",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
+              "CardConfig": "journey-mystrip"
             },
             {
-              "CardConfig": "journey-shaqjourney",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
+              "CardConfig": "journey-shaqjourney"
             },
             {
-              "CardConfig": "journey-downtown",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
+              "CardConfig": "journey-downtown"
             }
           ]
         },
-        "ScrollView": {
-          "LeftCardDistancePercent": 8.9,
-          "RightCardDistancePercent": 2.1
-        },
-        "Decorators": [
-          {
-            "Key": "Leanplum",
-            "MetaData": {
-              "Menu": "JourneysMenu"
-            }
-          }
-        ]
+        "Decorators": []
       },
       "RewardsMenu": {
         "ViewType": "rewards",
+        "ScrollView": {
+          "LeftCardDistancePercent": 0.6,
+          "RightCardDistancePercent": 1.2
+        },
         "HudElements": [
           {
             "Key": "OKTopHud"
           },
           {
             "Key": "OKChipMeter"
+          },
+          {
+            "Key": "OKCentralBuyButton"
           },
           {
             "Key": "OKLoyaltyMeter"
@@ -11333,9 +10922,6 @@
             "Key": "DoubleXPMeter"
           },
           {
-            "Key": "CustomOfferMeter"
-          },
-          {
             "Key": "OKBonusBubblyButton"
           },
           {
@@ -11345,35 +10931,27 @@
         "MenuCards": {
           "default": [
             {
-              "CardConfig": "2x1RewardReferenceCard",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
+              "CardConfig": "2x1RewardReferenceCard"
             }
           ]
         },
-        "ScrollView": {
-          "LeftCardDistancePercent": 8.9,
-          "RightCardDistancePercent": 2.1
-        },
-        "Decorators": [
-          {
-            "Key": "Leanplum",
-            "MetaData": {
-              "Menu": "JourneysMenu"
-            }
-          }
-        ]
+        "Decorators": []
       },
       "WalletMenu": {
         "ViewType": "wallet",
+        "ScrollView": {
+          "LeftCardDistancePercent": 0.6,
+          "RightCardDistancePercent": 1.2
+        },
         "HudElements": [
           {
             "Key": "OKTopHud"
           },
           {
             "Key": "OKChipMeter"
+          },
+          {
+            "Key": "OKCentralBuyButton"
           },
           {
             "Key": "OKLoyaltyMeter"
@@ -11412,9 +10990,6 @@
             "Key": "DoubleXPMeter"
           },
           {
-            "Key": "CustomOfferMeter"
-          },
-          {
             "Key": "OKBonusBubblyButton"
           },
           {
@@ -11424,26 +10999,11 @@
         "MenuCards": {
           "default": [
             {
-              "CardConfig": "2x1WalletReferenceCard",
-              "Height": 1,
-              "Width": 1,
-              "UnlockDate": "",
-              "RereleaseDate": ""
+              "CardConfig": "2x1WalletReferenceCard"
             }
           ]
         },
-        "ScrollView": {
-          "LeftCardDistancePercent": 8.9,
-          "RightCardDistancePercent": 2.1
-        },
-        "Decorators": [
-          {
-            "Key": "Leanplum",
-            "MetaData": {
-              "Menu": "JourneysMenu"
-            }
-          }
-        ]
+        "Decorators": []
       }
     }
   }
