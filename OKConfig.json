@@ -1,6 +1,6 @@
 {
   "OKViewItems": {
-    "Key": "2.16.2(10.31)Pv73",
+    "Key": "2.16.2(10.30)Pv72",
     "Cards": {
       "double_dynamic_offer": {
         "FactoryType": "OKStandardMenuCardFactory",
@@ -8,6 +8,15 @@
           "2": {
             "Size": 2,
             "Layers": [
+              {
+                "Bundle": "_menus/_promo/dynamic_offer",
+                "Image": "GameCard_Background",
+                "MatAttach": "PromoCard_Panel",
+                "Transform": {
+                  "position": "-1,-2,-1",
+                  "scale": "2,2,1"
+                }
+              },
               {
                 "Bundle": "_menus/_promo/dynamic_offer",
                 "Image": "GameCard_Foreground",
@@ -10183,7 +10192,7 @@
           "default": [
             {
               "CardConfig": "luckymei",
-              "Size": 2
+              "Size": 1
             },
             {
               "CardConfig": "bridesmaids",
